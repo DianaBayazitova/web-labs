@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Diana's Photo Gallery</title>
+    <meta name="keywords" content="photo, camera, gallery">
+    <meta name="description" content="Nothing unusual, just photos">
+    <link rel="icon" href="photos/logo.svg">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="index.js" defer></script>
+    <script type="text/javascript" src="promises.js" defer></script>
+    <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
+</head>
+
+<body>
+<header>
+    <nav>
+        <ul class="nav-bar">
+            <li>
+                <a id="index" href="index.html">Home</a>
+            </li>
+            <li>
+                <a id="gallery" href="gallery.html">Gallery</a>
+            </li>
+            <li>
+                <a id="form" href="form.html">Form</a>
+            </li>
+        </ul>
+    </nav>
+    <section class="page-header">
+        <h1 class="page-header title">
+        <pre>
+  Diana's
+  Photo
+  Gallery
+        </pre>
+        </h1>
+        <img class="page-header photo" src="photos/me.jpeg" alt="my pretty face" id="image">
+    </section>
+</header>
+<main>
+    <section class="sections-wrapper">
+        <section class="general-info">
+            <h2>About me</h2>
+            <p>
+                I'm 21 years old. I'm student of ITMO University.
+                I like to take photos for 35 mm camera or my mobile phone.
+            </p>
+            <p>
+                This site was created for Web programming labs.
+                I will upload here some simple photos that I took at different time periods
+            </p>
+        </section>
+        <section class="photo-gallery">
+            <!--            <nav class="lil-nav">-->
+            <!--                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/14179/kenan-sulayman-FV3M7igu8Fs-unsplash.jpg"-->
+            <!--                     alt="Yosemite">-->
+            <!--                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/14179/anastasia-dulgier-NCFTGtjY3EQ-unsplash.jpg"-->
+            <!--                     alt="Houses">-->
+            <!--                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/14179/arnaud-mariat-IPXcUYHeErc-unsplash.jpg"-->
+            <!--                     alt="Galaxies">-->
+            <!--                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/14179/matthew-smith-9CV6WrxxdrM-unsplash.jpg"-->
+            <!--                     alt="Motel">-->
+            <!--                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/14179/vladimir-kondriianenko-bxwzcFy9YwM-unsplash.jpg"-->
+            <!--                     alt="Minimalist nightmare">-->
+            <!--                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/14179/jakob-owens-EkxOtUljwhs-unsplash.jpg"-->
+            <!--                     alt="Hoops">-->
+            <!--                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/14179/tim-bogdanov-4uojMEdcwI8-unsplash.jpg"-->
+            <!--                     alt="Gentleman">-->
+            <!--                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/14179/weston-mackinnon-caUtk0DTiR0-unsplash.jpg"-->
+            <!--                     alt="Stuff">-->
+            <!--            </nav>-->
+            <div class="embla">
+                <div class="embla__container">
+                    <div class="embla__slide">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/14179/kenan-sulayman-FV3M7igu8Fs-unsplash.jpg"
+                             alt="Yosemite">
+                    </div>
+                    <div class="embla__slide">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/14179/anastasia-dulgier-NCFTGtjY3EQ-unsplash.jpg"
+                             alt="Houses">
+                    </div>
+                    <div class="embla__slide">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/14179/arnaud-mariat-IPXcUYHeErc-unsplash.jpg"
+                             alt="Galaxies">
+                    </div>
+                    <div class="embla__slide">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/14179/matthew-smith-9CV6WrxxdrM-unsplash.jpg"
+                             alt="Motel">
+                    </div>
+                    <div class="embla__slide">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/14179/vladimir-kondriianenko-bxwzcFy9YwM-unsplash.jpg"
+                             alt="Minimalist nightmare">
+                    </div>
+                    <div class="embla__slide">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/14179/jakob-owens-EkxOtUljwhs-unsplash.jpg"
+                             alt="Hoops">
+                    </div>
+                    <div class="embla__slide">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/14179/tim-bogdanov-4uojMEdcwI8-unsplash.jpg"
+                             alt="Gentleman">
+                    </div>
+                    <div class="embla__slide">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/14179/weston-mackinnon-caUtk0DTiR0-unsplash.jpg"
+                             alt="Stuff">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section class="contacts">
+        <h2>Contacts</h2>
+        <ul>
+            <li>mobile: 8-937-476-33-66</li>
+            <li>mail: <a href="mailto:d651332@yandex.ru">d651332@yandex.ru</a></li>
+            <li>GitHub: <a href="https://www.github.com/DianaBayazitova">github.com/DianaBayazitova</a></li>
+            <li>VK: <a href="https://vk.com/diana_bayazitova"> vk.com/diana_bayazitova</a></li>
+            <li>Telegram: <a href="https://t.me/DianaBayazitova">@DianaBayazitova</a></li>
+            <li>Instagram: <a href="https://www.instagram.com/bayazitova_di/">@bayazitova_di</a></li>
+        </ul>
+    </section>
+    <section class="education">
+        <h2>Education</h2>
+        <h5>Bachelor Information Systems and Technologies</h5>
+        <p>ITMO University</p>
+        <span>2019 - 2023, Saint Petersburg</span>
+    </section>
+    <section class="prank">
+        <h2>Prank</h2>
+        <pre>
+        .../(((✿
+          '(((²_²)))./((❀
+           . ¸╱█╲¸((•.•)))
+            .{▒♥▒} ,╱▓╲¸
+           .._/.I_._/ I_
+        </pre>
+        <pre>
+            <code>print("Hello World")
+                x<sup>2</sup>+y<sup>2</sup>=1
+            </code>
+            <q>Тише едешь - <i>дальше</i> будешь..</q>
+        </pre>
+    </section>
+    <article>
+        <a href="https://www.instagram.com/p/CZIPTZuoDr-/">
+            Last post in Instagram
+        </a>
+    </article>
+</main>
+<footer>
+    <div id="page-loading"></div>
+    <div class="grid-table">
+        <span>
+            <strong>Id</strong>
+        </span>
+        <span>
+            <strong>Full Name</strong>
+        </span>
+        <span>
+            <strong>City</strong>
+        </span>
+        <span>
+            <strong>Created At</strong>
+        </span>
+        <span>
+            <strong>Email</strong>
+        </span>
+    </div>
+    <div class="loader"></div>
+</footer>
+</body>
+</html>
