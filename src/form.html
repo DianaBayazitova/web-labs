@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="../public/styles.css">
+    <script type="text/javascript" src="../public/form.js" defer></script>
+    <script type="text/javascript" src="../public/index.js" defer></script>
+</head>
+<body>
+<header>
+    <nav>
+        <ul class="nav-bar">
+            <li>
+                <a id="index" href="index.html">Home</a>
+            </li>
+            <li>
+                <a id="gallery" href="gallery.html">Gallery</a>
+            </li>
+            <li>
+                <a id="form" href="form.html">Form</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <form class="form" name="form">
+        <label for="weekLength">Choose week length:</label>
+        <select id="weekLength" name="weekLength">
+            <option value="five">5</option>
+            <option value="six">6</option>
+        </select>
+        <label for="classesNumber">Maximum classes per day</label>
+        <input type="text" id="classesNumber" name="classesNumber">
+        <span><strong>Language</strong></span>
+        <label for="russian">Russian</label>
+        <input type="radio" id="russian" name="language" value="Russian">
+        <label for="english">English</label>
+        <input type="radio" id="english" name="language" value="English">
+        <input type="submit" value="Send">
+    </form>
+    <div id="div-for-table"></div>
+</main>
+<footer>
+    <div id="page-loading"></div>
+</footer>
+</body>
+</html>

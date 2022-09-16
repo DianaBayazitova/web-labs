@@ -1,0 +1,23 @@
+<section class="contacts">
+  <h2>Contacts</h2>
+  <ul>
+    {{#if mobile}}
+      <li>mobile: {{mobile}}</li>
+    {{/if}}
+    {{#if email}}
+      <li>mail: <a href="mailto:{{email}}">{{email}}</a></li>
+    {{/if}}
+    {{#if github}}
+      <li>GitHub: <a href="https://www.github.com/{{github}}">{{github}}</a></li>
+    {{/if}}
+    {{#if vk}}
+      <li>VK: <a href="https://vk.com/{{vk}}">{{vk}}</a></li>
+    {{/if}}
+    {{#if telegram}}
+      <li>Telegram: <a href="https://t.me/{{telegram}}">@{{telegram}}</a></li>
+    {{/if}}
+    {{#if instagram}}
+      <li>Instagram: <a href="https://www.instagram.com/{{instagram}}">@{{instagram}}</a></li>
+    {{/if}}
+  </ul>
+</section>

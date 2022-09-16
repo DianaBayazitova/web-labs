@@ -3,25 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Form</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
     <script type="text/javascript" src="form.js" defer></script>
     <script type="text/javascript" src="index.js" defer></script>
+  <script src='https://cdn.socket.io/4.5.0/socket.io.js' defer></script>
+  <script type="text/javascript" src="../websocket_form.js" defer></script>
 </head>
 <body>
 <header>
-    <nav>
-        <ul class="nav-bar">
-            <li>
-                <a id="index" href="index.html">Home</a>
-            </li>
-            <li>
-                <a id="gallery" href="gallery.html">Gallery</a>
-            </li>
-            <li>
-                <a id="form" href="form.html">Form</a>
-            </li>
-        </ul>
-    </nav>
+  {{> header}}
 </header>
 <main>
     <form class="form" name="form">
@@ -40,9 +30,15 @@
         <input type="submit" value="Send">
     </form>
     <div id="div-for-table"></div>
+  <ul id='products'></ul>
+  <div class='merge_elem'>
+    <div class='wrapper_form'>
+      <form class='popup' action='' id='post_product'><label for='inp_title'>Input title:</label><input id='inp_title'>
+        <button onclick='handleSubmitNewMessageProduct(event)'>Submit</button>
+      </form>
+    </div>
+  </div>
 </main>
-<footer>
-    <div id="page-loading"></div>
-</footer>
+{{> footer time=time}}
 </body>
 </html>

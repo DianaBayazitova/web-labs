@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Diana's Photo Gallery</title>
+    <meta name="keywords" content="photo, camera, gallery">
+    <meta name="description" content="Nothing unusual, just photos">
+    <link rel="icon" href="../photos/logo.svg">
+    <link rel="stylesheet" href="../styles.css">
+    <script type="text/javascript" src="../index.js" defer></script>
+<!--    <script type="text/javascript" src="../promises.js" defer></script>-->
+    <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
+</head>
+
+<body>
+<header>
+  {{> header}}
+    <section class="page-header">
+        <h1 class="page-header title">
+        <pre>
+  Diana's
+  Photo
+  Gallery
+        </pre>
+        </h1>
+        <img class="page-header photo" src="../photos/me.jpeg" alt="my pretty face" id="image">
+    </section>
+</header>
+<main>
+    <section class="sections-wrapper">
+        <section class="general-info">
+            <h2>About me</h2>
+            <p>
+                I'm 21 years old. I'm student of ITMO University.
+                I like to take photos for 35 mm camera or my mobile phone.
+            </p>
+            <p>
+                This site was created for Web programming labs.
+                I will upload here some simple photos that I took at different time periods
+            </p>
+        </section>
+        <section class="photo-gallery">
+            <div class="embla">
+                <div class="embla__container">
+                  <div class="embla__slide">
+                    <img src="https://images.freeimages.com/images/large-previews/5a0/nuclear-drugs-1241646.jpg"
+                         alt="drugs">
+                  </div>
+                  <div class="embla__slide">
+                    <img src="https://images.freeimages.com/images/large-previews/6b0/a-white-green-window-3-1225139.jpg"
+                         alt="window">
+                  </div>
+                  <div class="embla__slide">
+                    <img src="https://images.freeimages.com/images/large-previews/965/skyscraper-1056769.jpg"
+                         alt="skyscraper">
+                  </div>
+                  <div class="embla__slide">
+                    <img src="https://images.freeimages.com/images/large-previews/bef/evening-sky-after-the-storm-1-1055837.jpg"
+                         alt="sky">
+                  </div>
+                  <div class="embla__slide">
+                    <img src="https://images.freeimages.com/images/large-previews/2d6/old-house-in-iceland-1141489.jpg"
+                         alt="house">
+                  </div>
+                  <div class="embla__slide">
+                    <img src="https://images.freeimages.com/images/large-previews/e8e/wall-1178407.jpg"
+                         alt="wall">
+                  </div>
+                  <div class="embla__slide">
+                    <img src="https://images.freeimages.com/images/large-previews/7b9/book-page-1147367.jpg"
+                         alt="page">
+                  </div>
+                  <div class="embla__slide">
+                    <img src="https://images.freeimages.com/images/large-previews/517/colorful-buckets-1-1147925.jpg"
+                         alt="baskets">
+                  </div>
+                </div>
+            </div>
+        </section>
+    </section>
+<!--    <section class="contacts">-->
+<!--        <h2>Contacts</h2>-->
+<!--        <ul>-->
+<!--            <li>mobile: 8-937-476-33-66</li>-->
+<!--            <li>mail: <a href="mailto:d651332@yandex.ru">d651332@yandex.ru</a></li>-->
+<!--            <li>GitHub: <a href="https://www.github.com/DianaBayazitova">github.com/DianaBayazitova</a></li>-->
+<!--            <li>VK: <a href="https://vk.com/diana_bayazitova"> vk.com/diana_bayazitova</a></li>-->
+<!--            <li>Telegram: <a href="https://t.me/DianaBayazitova">@DianaBayazitova</a></li>-->
+<!--            <li>Instagram: <a href="https://www.instagram.com/bayazitova_di/">@bayazitova_di</a></li>-->
+<!--        </ul>-->
+<!--    </section>-->
+  {{> contacts}}
+    <section class="education">
+        <h2>Education</h2>
+        <h5>Bachelor Information Systems and Technologies</h5>
+        <p>ITMO University</p>
+        <span>2019 - 2023, Saint Petersburg</span>
+    </section>
+    <article>
+        <a href="https://www.instagram.com/p/CZIPTZuoDr-/">
+            Last post in Instagram
+        </a>
+    </article>
+</main>
+{{> footer time=time}}
+</body>
+</html>

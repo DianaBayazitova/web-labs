@@ -37,6 +37,10 @@ body {
     float: left;
 }
 
+.nav-bar li:last-of-type {
+    float: right;
+}
+
 .nav-bar a {
     display: inline-block;
     text-align: center;
@@ -53,7 +57,6 @@ body {
 .nav-bar a:hover:not(.active) {
     background-color: #c9b3de;
 }
-
 
 header h1 pre {
     height: 7rem;
